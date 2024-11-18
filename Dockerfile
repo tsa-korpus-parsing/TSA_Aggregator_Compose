@@ -1,6 +1,6 @@
-FROM python:3-jessie
+FROM python:3.8-bullseye
 
-RUN pip3 install --no-cache --upgrade setuptools flask wheel requests pandas beautifulsoup4
+RUN pip3 install --no-cache --upgrade setuptools flask wheel requests pandas beautifulsoup4 datasets
 
 COPY framework framework 
 WORKDIR framework
